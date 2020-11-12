@@ -56,7 +56,7 @@ li{
 
 .btn-white {
   border: 1px solid #fe775a;
-  color: #fe775a
+  color: #fe775a;
 }
 
 .btn-large {
@@ -84,6 +84,9 @@ header div.header-top li {
   background-color: white;
   border-bottom: 2px solid #657684;
   /* line-height: 100px; */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 
 .nav-fixed div.container {
@@ -92,9 +95,10 @@ header div.header-top li {
 
 
 .nav-bottom {
-  /* width: 100%; */
+  margin-top: 100px;
   height: 100px;
   /* background-color: rgba(193, 131, 80, 0.55); */
+
 }
 
 .logo-img img {
@@ -128,4 +132,16 @@ div.container .jumbo-text {
 .jumbo-text p {
   line-height: 1.8;
   margin: 30px 0px;
+}
+
+.jumbo-img {
+  /* position: relative; */
+}
+
+.jumbobar {
+  height: 92px;
+  width: 100%;
+  background-color: #afebe4;
+  border-top: 2px solid #33475b;
+  border-bottom: 2px solid #33475b;
 }
