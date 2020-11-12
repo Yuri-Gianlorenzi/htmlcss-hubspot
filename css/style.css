@@ -97,6 +97,10 @@ header div.header-top li {
   /* background-color: rgba(193, 131, 80, 0.55); */
 }
 
+.logo-img img {
+  margin-top: 35px;
+}
+
 .nav-bottom div.container {
   line-height: 100px;
 }
@@ -106,4 +110,12 @@ header div.header-top li {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.jumbotron .jumbo-text {
+  height: 50%;
+  width: 50%;
+  position:
+  
 }
