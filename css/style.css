@@ -110,12 +110,22 @@ header div.header-top li {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+
 }
 
-.jumbotron .jumbo-text {
-  height: 50%;
+div.container .jumbo-text {
+  padding-top: 30px;
+  height: 80%;
   width: 50%;
-  position:
-  
+  text-align: left;
+}
+
+.jumbo-text h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.jumbo-text p {
+  line-height: 1.8;
+  margin: 30px 0px;
 }
