@@ -1,3 +1,5 @@
+/* REGOLE GENERALI */
+
 *{
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #33475b;
+  /* color: #33475b; */
 }
 
 .float-left {
@@ -40,6 +42,8 @@ li{
   display: inline-block;
 }
 
+/* /REGOLE GENERALI */
+
 /* BOTTONI */
 
 .btn {
@@ -66,57 +70,64 @@ li{
 /* /BOTTONI */
 
 
-
+/* HEADER */
 
 header{
   width: 100%;
-  /* height: 200px; */
-  /* background-color: red; */
 }
 
+/* Per distanziare gli elementi delle liste nella parte superiore dell'header */
 header div.header-top li {
   padding: 0 10px;
 }
 
+/* per inserire la riga verticale tra english e contact us */
+ul.nav-fixed-left li :last-child {
+  border-right: 1px solid black;
+  padding-right: 15px;
+}
+
+/* per fissare la parte superiore dell'header durante lo scroll, oltre che la misure di questa */
 .nav-fixed {
   width: 100%;
   height: 100px;
   background-color: white;
   border-bottom: 2px solid #657684;
-  /* line-height: 100px; */
   overflow: hidden;
   position: fixed;
   top: 0;
 }
 
+/* entrambe le sezioni della parte superiore dell'header, hanno la stessa line height */
 .nav-fixed div.container {
   line-height: 100px;
 }
 
-
+/* per far si che la parte inferiore non venga nascosta dalla parte fixed, gli viene dato un margine  superiore pari all'altezza della sezione precedente */
 .nav-bottom {
   margin-top: 100px;
   height: 100px;
-  /* background-color: rgba(193, 131, 80, 0.55); */
-
 }
 
+/* per centrare al meglio l'immagine del logo */
 .logo-img img {
   margin-top: 35px;
 }
 
+/* viene impostata la line height della parte inferiore del header, dove si trova la nav */
 .nav-bottom div.container {
   line-height: 100px;
 }
 
+/* viene impostata l'immagine di sottofondo del jumbotron, con queste impostazioni sono riuscito ad inserire tutta l'immagine (si potrebbe fare a meno dalla riga azzurrina da inserire in fondo al jumbotron, ma la faccio lo stesso) */
 .jumbotron  .jumbo-img {
   background-image: url("../img/jumbotron.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
+/* viene impostato il box dove viene inserito il testo nel jumbotron */
 div.container .jumbo-text {
   padding-top: 30px;
   height: 80%;
@@ -124,20 +135,19 @@ div.container .jumbo-text {
   text-align: left;
 }
 
+/* qui vengono date le impostazioni al titolo principale */
 .jumbo-text h1 {
   font-size: 50px;
   margin-bottom: 30px;
 }
 
+/* qui vengono date le impostazioni al paragrafo del jumbotron */
 .jumbo-text p {
   line-height: 1.8;
   margin: 30px 0px;
 }
 
-.jumbo-img {
-  /* position: relative; */
-}
-
+/* qui impostiamo la fascia azzurra in fondo al jumbotron, il problema è che quando apro la pagina su uno schermo più grande, la linea si sfasa di qualche pixel, stando sotto "l'orizzonte dell'immagine" */
 .jumbobar {
   height: 92px;
   width: 100%;
@@ -145,3 +155,5 @@ div.container .jumbo-text {
   border-top: 2px solid #33475b;
   border-bottom: 2px solid #33475b;
 }
+
+/* /HEADER */
