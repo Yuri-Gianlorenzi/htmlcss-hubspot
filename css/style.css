@@ -167,3 +167,25 @@ div.container .jumbo-text {
 }
 
 /* /HEADER */
+
+
+/* MAIN */
+
+/* PRIMA SEZIONE */
+.info {
+  background-color: #f4f9fd;
+}
+
+section.info .container .infobox {
+  content: '';
+  height: 200px;
+  width: 100%;
+  background-color: red;
+}
+
+/* /PRIMA SEZIONE */
+
+
+
+
+/* /MAIN */
