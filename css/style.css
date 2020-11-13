@@ -171,17 +171,27 @@ div.container .jumbo-text {
 
 /* MAIN */
 
-/* PRIMA SEZIONE */
-.info {
+main {
   background-color: #f4f9fd;
 }
 
+/* PRIMA SEZIONE */
+
+
 section.info .container .infobox {
-  content: '';
-  height: 200px;
   width: 100%;
-  background-color: red;
+  text-align: center;
+  margin: 20px 0;
 }
+
+.infobox h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.infobox p {
+  line-height: 1.6;
+  }
 
 /* /PRIMA SEZIONE */
 
