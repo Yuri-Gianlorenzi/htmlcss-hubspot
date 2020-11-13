@@ -38,6 +38,7 @@ body {
 ul {
   list-style: none;
 }
+
 li{
   display: inline-block;
 }
@@ -199,8 +200,10 @@ section.info .container .infobox {
 
 /* /PRIMA SEZIONE INFO*/
 
+
 /* SECONDA SEZIONE DETAILS */
 
+/* uprow */
 section.details .uprow {
   width: 100%;
   background-color: white;
@@ -210,11 +213,10 @@ section.details .uprow {
 }
 
 section.details .uprow .uprow-img {
-  width: 35%;
+  width: 30%;
   padding: 50px 50px 70px 50px;
   text-align: center;
 }
-
 
 section.details .uprow .uprow-img img {
   height: 50%;
@@ -222,8 +224,12 @@ section.details .uprow .uprow-img img {
   margin-bottom: 40px;
 }
 
+section.details .uprow .uprow-img div {
+  margin-top: 30px;
+}
+
 section.details .uprow .uprow-text {
-  width: 65%;
+  width: 70%;
   padding: 50px 50px 70px 50px;
   text-align: left;
 }
@@ -255,24 +261,63 @@ section.details .uprow .uprow-text ul li {
   padding-right: 20px;
 }
 
+/* /uprow */
+
+/* downrow */
 .downrow {
   width: 100%;
-  /* height: 300px; */
-  background-color: red;
   margin-bottom: 30px;
-
 }
 
+/* le prossime 2 regole servono a creare 3 box con larghezza identica, quindi diamo al box centrale un margine sx e dx, considerando questo margine, di conseguenza impostamo la larghezza dei box */
 .downrow-box {
   width: 30%;
-  height: 500px;
-  background-color: blue;
-  /* margin: 10px; */
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 1px 1px 9px 1px rgb(212, 212, 212, 0.5);
+  border-radius: 5px;
 }
 
 #centercol {
   margin: 0 5%;
 }
+
+/* in questa sezione (downrow) abbiamo delle liste che non devono essere inline block come quelle presenti nella parte superiore della pagina, perciò inseriamo la seguente regola */
+section.details div.downrow .downrow-box li {
+  display: block;
+}
+
+section.details div.downrow .downrow-box img {
+  width: 120px;
+  height: 120px;
+}
+
+section.details div.downrow .downrow-box h2 {
+  padding-bottom: 30px;
+}
+
+section.details div.downrow .downrow-box p {
+  line-height: 1.8;
+  padding: 0 15px;
+}
+
+section.details div.downrow .downrow-box hr {
+  margin: 60px 0 30px 0;
+}
+
+section.details div.downrow .downrow-box h3 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+section.details div.downrow .downrow-box ul {
+  text-align: left;
+  padding-bottom: 60px;
+}
+
+/* /downrow */
+
 /* /SECONDA SEZIONE DETAILS */
 
 
