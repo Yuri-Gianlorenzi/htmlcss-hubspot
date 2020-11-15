@@ -47,6 +47,9 @@ li{
   color: #fe775a;
 }
 
+#bold {
+  font-weight: bold;
+}
 /* /REGOLE GENERALI */
 
 /* BOTTONI */
@@ -349,8 +352,6 @@ section.learn .firstrow p {
 /* inizio seconda e terza riga della sezione learn */
 
 .otherrow {
-  /* background-color: blue; */
-  /* height: 300px; */
   width: 100%;
   padding-bottom: 40px;
 }
@@ -358,13 +359,11 @@ section.learn .firstrow p {
 section.learn .lastrow {
   height: 50%;
   width: 100%;
-  /* background-color: lightblue; */
 }
 
 section.learn .lastrow .learnbox {
   height: 100%;
   width: 25%;
-  /* border: 1px solid white; */
   padding: 20px 0;
   text-align: center;
 }
@@ -407,12 +406,74 @@ section.learn .otherrow .lastrow .learnbox p {
 
 /* qui sistemiamo l'immagine del primo e dell'ultimo box dell'ultima riga, dato che hanno dimensioni diverse dalle altre immagini, gli viene data dunquela stessa immagine di tutte le altre */
 .fiximage {
-  /* width: 120px; */
   height: 53px;
 }
 
 /* fine seconda e terza riga della sezione learn */
 
 /* /TERZA SEZIONE LEARN */
+
+/* INIZIO QUARTA SEZIONE GROWING */
+
+section.grow .grow-first {
+  width: 100%;
+}
+
+section.grow .grow-second {
+  width: 100%;
+  padding: 50px 0;
+}
+
+section.grow .grow-first-left {
+  width: 40%;
+  padding: 5% 10%;
+  line-height: 1.8;
+  text-align: center;
+}
+
+section.grow div.grow-first-right {
+  width: 60%;
+  height: 100%;
+}
+
+section.grow div.grow-first-left h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.linebox div {
+  width: 25%;
+  padding-top: 40px;
+}
+
+section.grow div.grow-first-right div.linebox img {
+  width: 50%;
+  margin-top: 40px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.grow-second .growing {
+  width: 50%;
+  line-height: 1.8;
+}
+
+.grow-second .growing h2 {
+  font-size: 30px;
+}
+
+.grow-second .growing p {
+  padding: 30px 0;
+}
+
+.grow-second .down-img {
+  width: 50%;
+  text-align: right;
+}
+
+.grow-second .down-img img {
+  width: 60%;
+}
+/* /FINE QUARTA SEZIONE GROWING */
 
 /* /MAIN */
