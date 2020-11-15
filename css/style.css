@@ -320,6 +320,54 @@ section.details div.downrow .downrow-box ul {
 
 /* /SECONDA SEZIONE DETAILS */
 
+/* TERZA SEZIONE LEARN */
 
+section.learn {
+  /* per impostare uno sfondo sfumato */
+  background-image: linear-gradient(to right, #00abb7 , #00baa8);
+  color: white;
+}
+
+/* inizio prima righa della sezione learn */
+section.learn .firstrow {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+}
+
+section.learn .firstrow h2 {
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+section.learn .firstrow p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+/* fine prima riga della sezione learn */
+
+/* inizio seconda e terza riga della sezione learn */
+
+.otherrow {
+  background-color: blue;
+  height: 300px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+section.learn .lastrow {
+  height: 50%;
+  width: 100%;
+  background-color: lightblue;
+}
+
+section.learn .lastrow .learnbox {
+  height: 100%;
+  width: 25%;
+  border: 1px solid white;
+}
+/* fine seconda e terza riga della sezione learn */
+
+/* /TERZA SEZIONE LEARN */
 
 /* /MAIN */
