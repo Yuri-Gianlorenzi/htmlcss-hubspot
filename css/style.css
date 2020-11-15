@@ -349,8 +349,8 @@ section.learn .firstrow p {
 /* inizio seconda e terza riga della sezione learn */
 
 .otherrow {
-  background-color: blue;
-  height: 300px;
+  /* background-color: blue; */
+  /* height: 300px; */
   width: 100%;
   padding-bottom: 40px;
 }
@@ -358,14 +358,59 @@ section.learn .firstrow p {
 section.learn .lastrow {
   height: 50%;
   width: 100%;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 section.learn .lastrow .learnbox {
   height: 100%;
   width: 25%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  padding: 20px 0;
+  text-align: center;
 }
+
+/* qui indichiamo che solo il primo figlio di lastrow deve avere il margine basso (la riga che separa le ultime 2 row)*/
+
+.otherrow div.lastrow:first-child {
+  border-bottom: 1px solid white;
+}
+
+/* qui indichiamo che tutti i box di lastrow abbiano il bordo destro, tranne l'ultimo box di entrambe le righe */
+.otherrow .lastrow div.learnbox:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+section.learn .otherrow .lastrow .learnbox img {
+  padding-bottom: 20px;
+}
+
+section.learn .otherrow .lastrow .learnbox .learnbox-number {
+  padding-bottom: 20px;
+}
+
+/* WARNING i comandi successivi mi permettono di mettere il + di fianco al numero, se li considero 2 oggetti diversi, dunque non mettendo il carattere speciale di fianco al numero nell'html */
+section.learn .otherrow .lastrow .learnbox .learnbox-number h2 {
+  display: inline;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+section.learn .otherrow .lastrow .learnbox .learnbox-number p {
+  display: inline;
+  vertical-align: middle;
+  font-size: 30px;
+}
+
+section.learn .otherrow .lastrow .learnbox p {
+  font-size: 13px;
+}
+
+/* qui sistemiamo l'immagine del primo e dell'ultimo box dell'ultima riga, dato che hanno dimensioni diverse dalle altre immagini, gli viene data dunquela stessa immagine di tutte le altre */
+.fiximage {
+  /* width: 120px; */
+  height: 53px;
+}
+
 /* fine seconda e terza riga della sezione learn */
 
 /* /TERZA SEZIONE LEARN */
