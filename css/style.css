@@ -28,10 +28,6 @@ body {
 
 .container {
   width: 80%;
-  /* da cancellare */
-  /* height: 700px; */
-  /* background-color: pink; */
-  /* da cancellare */
   margin: auto;
 }
 
@@ -47,7 +43,7 @@ li{
   color: #fe775a;
 }
 
-#bold {
+.bold {
   font-weight: bold;
 }
 /* /REGOLE GENERALI */
@@ -73,6 +69,11 @@ li{
 
 .btn-large {
   padding: 20px;
+}
+
+.btn-blue {
+  background-color: white;
+  color: #32495b;
 }
 
 /* /BOTTONI */
@@ -185,18 +186,20 @@ main {
 
 /* PRIMA SEZIONE INFO*/
 
-
+/* qui diamo le indicazioni per la sezione sotto il jumbotron: dimensioni, margini e come vogliamo che sia centrato il testo */
 section.info .container .infobox {
   width: 100%;
   text-align: center;
   margin: 20px 0;
 }
 
+/* per distanziare il titolo sezione dall'immagine e dal paragrafo successivo, con distanze diverse */
 .infobox h2 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
+/* qui indichiamo l'interlinea del paragrafo */
 .infobox p {
   line-height: 1.6;
   }
@@ -207,6 +210,7 @@ section.info .container .infobox {
 /* SECONDA SEZIONE DETAILS */
 
 /* uprow */
+/* qui diamo le indicazioni alla riga superiore di questa sezione: larghezza, colore sfondo, margine superiore, bordo ombreggiato e angoli smussati */
 section.details .uprow {
   width: 100%;
   background-color: white;
@@ -215,51 +219,60 @@ section.details .uprow {
   border-radius: 5px;
 }
 
+/* qui indichiamo al box contenente l'immagine quanto deve occupare del suo contenitore padre, la centratura del testo e con il padding abbiamo centrato il tutto */
 section.details .uprow .uprow-img {
   width: 30%;
   padding: 50px 50px 70px 50px;
   text-align: center;
 }
 
+/* qui diamo delle indicazioni riguardanti l'immagine, per far si che sia come da immagine assegnata */
 section.details .uprow .uprow-img img {
   height: 50%;
   width: 50%;
   margin-bottom: 40px;
 }
 
+/* qui diamo delle indicazioni riguardanti il button sottostante l'immagine */
 section.details .uprow .uprow-img div {
   margin-top: 30px;
 }
 
+/* qui diamo delle indicazioni al box a destra di quello dell'immagine: larghezza del contenitore padre che deve occupare, padding per centrare il tutto e allineamento del testo interno a sinistra */
 section.details .uprow .uprow-text {
   width: 70%;
   padding: 50px 50px 70px 50px;
   text-align: left;
 }
 
+/* WARNING qui indichiamo che il titolo deve staccarsi di quel padding dal paragrafo sottostante */
 section.details .uprow .uprow-text h2 {
   padding: 30px 0;
 }
 
+/* qui indichiamo l'interlinea del paragrafo e il padding inferiore, per staccarlo dal contenuto successivo */
 section.details .uprow .uprow-text p {
   line-height: 1.8;
   padding-bottom: 20px;
 }
 
+/* qui diamo le indicazioni al titoletto, lo vogliamo in maiuscolo e con un padding inferiore */
 section.details .uprow .uprow-text h3 {
   text-transform: uppercase;
   padding-bottom: 30px;
 }
 
+/* qui creiamo la linea che sta a fianco del titoletto, la larghezza è stata assegnata provando varie misure */
 section.details .uprow .uprow-text h3::after {
   content: '';
-  width: 430px;
+  width: 70%;
   margin-left: 40px;
   border: 1px solid #33475b;
   display: inline-block;
   vertical-align: middle;
 }
 
+/* qui utiliziamo la lista con dei font, la lista noon doveva essere in verticale, ma svilupparsi in orizzontale */
 section.details .uprow .uprow-text ul li {
   padding-right: 20px;
 }
@@ -267,6 +280,7 @@ section.details .uprow .uprow-text ul li {
 /* /uprow */
 
 /* downrow */
+/* qui indichiamo la larghezza del contenitore che conterrà le 3 colonne identiche, oltre che un padding inferiore per separare la seconda sezione dalla terza */
 .downrow {
   width: 100%;
   margin-bottom: 30px;
@@ -282,6 +296,7 @@ section.details .uprow .uprow-text ul li {
   border-radius: 5px;
 }
 
+/* qui utilizziamo un id per dare alla colonna centrale un margine a destra e sinistra, questo margine va sottratto alla larghezza del contenitore padre se vogliamo avere le colonne identiche */
 #centercol {
   margin: 0 5%;
 }
@@ -291,29 +306,35 @@ section.details div.downrow .downrow-box li {
   display: block;
 }
 
+/* WARNING qui ho dovuto dare delle grandezze in pixel uniche per tutte e tre le immagini delle colonne, data la diversa dimensione delle immagini originali */
 section.details div.downrow .downrow-box img {
   width: 120px;
   height: 120px;
 }
 
+/* WARNING qui diamo un padding inferiore ai tre titoli delle colonne */
 section.details div.downrow .downrow-box h2 {
   padding-bottom: 30px;
 }
 
+/* qui si imposta l'interlinea dei paragrafi delle colonne, oltre che un ulteriore padding, per centrare ulteriormente il tutto */
 section.details div.downrow .downrow-box p {
   line-height: 1.8;
   padding: 0 15px;
 }
 
+/* qui diamo un padding superiore ed inferiore diversi, per creare il più possibile l'effetto come assegnato */
 section.details div.downrow .downrow-box hr {
   margin: 60px 0 30px 0;
 }
 
+/* qui vogliamo che il titoletto sia in maiuscolo, oltre che ad un padding per separarlo dalla lista successiva */
 section.details div.downrow .downrow-box h3 {
   text-transform: uppercase;
   padding-bottom: 30px;
 }
 
+/* qui indichiamo che gli elementi della lista, contariamente al resto del box devono essere allineati a sinistra, iltre al padding per separarla dal bottone sottostante */
 section.details div.downrow .downrow-box ul {
   text-align: left;
   padding-bottom: 60px;
@@ -338,11 +359,13 @@ section.learn .firstrow {
   padding: 40px 0;
 }
 
+/* WARNING qui indichiamo l agrandezza del font e il padding sottostante al titolo della sezione */
 section.learn .firstrow h2 {
   padding-bottom: 30px;
   font-size: 30px;
 }
 
+/* qui indichiamo l'interlinea e la grandezza del font del paragrafo */
 section.learn .firstrow p {
   line-height: 1.8;
   font-size: 16px;
@@ -351,18 +374,19 @@ section.learn .firstrow p {
 
 /* inizio seconda e terza riga della sezione learn */
 
+/* qui diamo la grandezza delle 2 row utilizzate per creare la tabella */
 .otherrow {
   width: 100%;
   padding-bottom: 40px;
 }
 
+/* qui utilizziamo la stessa classe per le 2 row che formano la tabella */
 section.learn .lastrow {
-  height: 50%;
   width: 100%;
 }
 
+/* qui utilizziamo la stessa classe per tutti i box che formano la tabella */
 section.learn .lastrow .learnbox {
-  height: 100%;
   width: 25%;
   padding: 20px 0;
   text-align: center;
@@ -379,10 +403,12 @@ section.learn .lastrow .learnbox {
   border-right: 1px solid white;
 }
 
+/* qui diamo un padding inferiore a tutte le immagini-logo della tabella */
 section.learn .otherrow .lastrow .learnbox img {
   padding-bottom: 20px;
 }
 
+/* qui diamo un padding inferiore a tutte la sezioni contenenti il numero, nalla parte centrale di oggi box presente nella tabella */
 section.learn .otherrow .lastrow .learnbox .learnbox-number {
   padding-bottom: 20px;
 }
@@ -400,6 +426,7 @@ section.learn .otherrow .lastrow .learnbox .learnbox-number p {
   font-size: 30px;
 }
 
+/* qui diamo una grandezza a tutti i paragrafi della tabella, è stato dato questo valore per raggiungere il più possibile l'immagine assegnata */
 section.learn .otherrow .lastrow .learnbox p {
   font-size: 13px;
 }
@@ -415,15 +442,18 @@ section.learn .otherrow .lastrow .learnbox p {
 
 /* INIZIO QUARTA SEZIONE GROWING */
 
+/* qui diamo una larghezza al contenitore che contiene gli elementi della prima parte della terza sezione */
 section.grow .grow-first {
   width: 100%;
 }
 
+/* qi diamo una larghezza alla seconda parte della terza sezione */
 section.grow .grow-second {
   width: 100%;
   padding: 50px 0;
 }
 
+/* qui diamo la larghezza del contenitore a sinistra delle 8 immagini, il padding è stato impostato dopo alcuni tentativi per avere un risultato il più vicino possibile all'immagine assegnata */
 section.grow .grow-first-left {
   width: 40%;
   padding: 5% 10%;
@@ -431,49 +461,123 @@ section.grow .grow-first-left {
   text-align: center;
 }
 
+/* qui indichiamo la larghezza del contenitore che contiene le 8 immagini logo, è stata impostata un 20% più grande dell'altro contenitore presente nella stessa row */
 section.grow div.grow-first-right {
   width: 60%;
-  height: 100%;
 }
 
+/* qui impostamo grandezza e margine inferiore del numero grosso */
 section.grow div.grow-first-left h2 {
   font-size: 50px;
   margin-bottom: 20px;
 }
 
+/* qui indichiamo che ogni contenitore dell'immagine deve occupare un quarto della relativa riga padre */
 .linebox div {
   width: 25%;
   padding-top: 40px;
 }
 
+/* WARNING qui ho dovuto impostare una larghezza precisa alle immagini, oltre che i margini superiori e destro per rendere il risultato il più vicino possibile all'immagine assegnata */
 section.grow div.grow-first-right div.linebox img {
   width: 50%;
   margin-top: 40px;
   margin-right: 20px;
-  vertical-align: middle;
 }
 
+/* qui indichiamo la larghezza dei 2 contenitori della secona parte della terza sezione, oltre che l'interlinea presente in esso e la grandezza del font */
 .grow-second .growing {
   width: 50%;
   line-height: 1.8;
+  font-size: 20px;
 }
 
+/* WARNING qui diamo una grandezza del font specifica per il titolo della sezione */
 .grow-second .growing h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
+/* qui diamo un padding laterale al paragrafo della sezione */
 .grow-second .growing p {
   padding: 30px 0;
 }
 
+/* qui diamo una larghezza precisa al contenitore, oltre che indicare cheil contenuto lo vogliamo alla destra di esso*/
 .grow-second .down-img {
   width: 50%;
   text-align: right;
 }
 
+/* qui, per tentativi, si è data una larghezza all'immagine, per rendere il risultato simile il più possibile all'immagine assegnata */
 .grow-second .down-img img {
   width: 60%;
 }
 /* /FINE QUARTA SEZIONE GROWING */
 
 /* /MAIN */
+
+/* FOOTER */
+/* qui indichiamo il colore specifico del background dell'intero footer, oltre all'indicazione che qualsiasi testo presente al suo interno deve essere bianco */
+footer {
+  background-color: #32495b;
+  color: white;
+}
+
+/* qui distanziamo il footer dalla quarta sezione */
+.footer-bottom {
+  padding-bottom: 30px;
+}
+
+/* qui impostiamo per ogni colonna del footer una larghezza in percentuale uguale */
+.footer-top .colonna {
+  width: 25%;
+  padding: 30px 0;
+}
+
+/* qui, dobbiamo impostare che le liste dell'intero footer si sviluppino in verticale e non in orizzontale, inoltre con il padding diamo una separazione maggiore agli  elementi della lista */
+footer .footer-top .colonna ul li {
+  display: block;
+  padding-bottom: 20px;
+}
+
+/* qui viene utilizzata una lista per fissare le icone social sotto il bottone, dobbiamo tornate a specificare che vogliamo uno sviluppo orizzontale della lista. inoltre specifichiamo la grandezza del font, per ingrandirle, ed un padding destro per distanziarle  */
+footer .footer-top div.colonna div.social-list ul li {
+  display: inline;
+  font-size: 20px;
+  padding-right: 25px;
+}
+
+/* qui indichiamo che i linguaggi li vogliamo in centro, oltre che al padding sueriore ad inferiore necessari per distanziare questo elemento dagli altri presenti nel footer */
+.footer-language ul {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* qui impostiamo un padding destro per distanziare le scritte delle lingue */
+.footer-language ul li {
+  padding-right: 50px;
+}
+
+/* qui impostiamo la larghezza dell'ultimo contenitore del footer, olre che un padding verticale per distanziarlo dagli altri elementi e dalla fine della pagina */
+.final-footer {
+  width: 100%;
+  padding: 30px 0;
+}
+
+/* qui diamo le larghezze degli ultimi 2 contenitori del footer */
+.info-hubspot {
+  width: 50%;
+}
+
+/* qui oltre alla larghezza dell'altro contenitore, viene impostato ulteriormente che in questo il testo deve essere allineato a sinistra, come da immagine assegnata */
+.legal {
+  width: 50%;
+  text-align: right;
+}
+
+/* per rappresentare le scritte riguardanti le policy legali è stata utilizzata una lista sviluppata in orizzontale, il padding serve a distanziare gli elementi della lista */
+.legal li {
+  padding-right: 30px;
+}
+
+/* /FOOTER */
