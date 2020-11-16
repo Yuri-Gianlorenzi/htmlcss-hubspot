@@ -78,6 +78,48 @@ li{
 
 /* /BOTTONI */
 
+/* STICKY */
+div#sticky {
+  position: fixed;
+  width: 15%;
+  bottom: 20px;
+  right: 20px;
+}
+
+.sticky-up {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 1px 9px 1px rgb(212, 212, 212, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.img-sticky {
+  position: relative;
+}
+
+.img-sticky i {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fe775a;
+}
+
+.text-sticky {
+  padding: 10px;
+  border: 1px solid #32495b;
+  border-radius: 5px;
+}
+
+
+.icon-message {
+  font-size: 70px;
+  color: #fe775a;
+}
+/* /STICKY */
+
 
 /* HEADER */
 
